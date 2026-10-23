@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>📝 Việc cần làm</h1>
+    <form id="todo-form">
+      <input id="todo-input" type="text" placeholder="Thêm việc mới..." autocomplete="off" required />
+      <button type="submit">Thêm</button>
+    </form>
+    <div class="filters">
+      <button data-filter="all" class="active">Tất cả</button>
+      <button data-filter="active">Chưa xong</button>
+      <button data-filter="done">Đã xong</button>
+    </div>
+    <ul id="todo-list"></ul>
+    <footer>
+      <span id="counter">0 việc còn lại</span>
+      <button id="clear-done">Xóa việc đã xong</button>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
